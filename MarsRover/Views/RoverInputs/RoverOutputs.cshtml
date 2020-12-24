@@ -1,0 +1,20 @@
+﻿@model MarsRover.Models.RoverOutputsModel
+
+@{
+    ViewData["Title"] = "Rover Outputs";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mars Rover Results</h1>
+    <p>Below you can see the final positions and headings for the MarsRovers.</p>
+</div>
+
+<div class="text-center">
+    <textarea asp-for="RoverOutputs" type="text" rows="6" class="form-control"></textarea>
+</div>
+<div class="text-center">
+    <a asp-controller="RoverInputs" asp-action="Index" class="btn btn-primary">
+        Return to Inputs
+    </a>
+</div>
+
